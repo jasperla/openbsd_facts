@@ -36,10 +36,8 @@ Available facts
 - buffercache
   `kern.bufcachepercent`
 
-TODO
-----
-
-Sensors information from `hw.sensors`
+- sensors
+  `hw.sensors`
 
 Copyright
 ---------
