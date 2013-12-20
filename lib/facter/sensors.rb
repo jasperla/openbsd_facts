@@ -3,6 +3,8 @@ sensors_list = sensor_data.scan(/^\S+/).collect { |s| s.gsub(/hw\.sensors\.(\w*)
 
 # List of all sensors in the system
 Facter.add('sensors') do
+  confine :kernel => :OpenBSD
+
   setcode do
     sensors_list.join(',')
   end
@@ -16,6 +18,8 @@ sensors_list.each do |sensor|
 
   sensor_nodes.each do |node|
     Facter.add("sensor_#{sensor}_#{node}") do
+      confine :kernel => :OpenBSD
+
       setcode do
         Facter::Util::Resolution.exec("/sbin/sysctl -n hw.sensors.#{sensor}.#{node}")
       end
