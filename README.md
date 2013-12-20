@@ -39,7 +39,12 @@ Available facts
 - sensors
   `hw.sensors`
 
+Support
+-------
+
+Issue reports and pull requests can be filed on [GitHub/jasperla](https://github.com/jasperla/openbsd_facts/issues).
+
 Copyright
 ---------
 
-2013 Jasper Lievisse Adriaanse <jasper@humppa.nl> release under the ISC license.
+2013 Jasper Lievisse Adriaanse <jasper@openbsd.org> release under the ISC license.
