@@ -39,6 +39,9 @@ Available facts
 - sensors
   `hw.sensors`
 
+- tz
+  Timezone as configured by `/etc/localtime`
+
 Support
 -------
 
